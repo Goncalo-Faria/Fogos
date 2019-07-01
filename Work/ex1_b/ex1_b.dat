@@ -1,0 +1,22 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: cam
+ * Creation Date: Dec 2, 2018 at 4:24:54 PM
+ *********************************************/
+
+ SheetConnection sheet("ex1_b.xlsx");
+
+n from SheetRead(sheet, "Sheet1!B2");
+ignicao_x from SheetRead(sheet, "Sheet1!B4");
+ignicao_y from SheetRead(sheet, "Sheet1!B5");
+
+c_norte from SheetRead(sheet, "Sheet1!B7:H13");
+c_este from SheetRead(sheet, "Sheet1!B17:H23");
+c_sul from SheetRead(sheet, "Sheet1!B27:H33");
+c_oeste from SheetRead(sheet, "Sheet1!B37:H43");
+
+x_norte to SheetWrite(sheet, "Sheet1!B47:H53");
+x_este to SheetWrite(sheet, "Sheet1!B57:H63");
+x_sul to SheetWrite(sheet, "Sheet1!B67:H73");
+x_oeste to SheetWrite(sheet, "Sheet1!B77:H83");
+funcao_objetivo to SheetWrite(sheet, "Sheet1!K2"); 
